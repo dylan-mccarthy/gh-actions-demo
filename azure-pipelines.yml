@@ -13,7 +13,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(build.Repository.LocalPath)'
-    Contents: '**'
+    Contents: '**/*.tf'
     TargetFolder: '$(build.artifactstagingdirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
