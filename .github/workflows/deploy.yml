@@ -35,6 +35,7 @@ jobs:
   test-deploy:
     runs-on: ubuntu-latest
     environment: test
+    needs: dev-deploy
     steps:
       - uses: actions/checkout@v3
       
